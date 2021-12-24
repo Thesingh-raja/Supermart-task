@@ -1,0 +1,233 @@
+/* ************************************************ */
+/* MARGIN CONTAINER FOR ALL ELEMENTS */
+/* ************************************************ */
+.overall-margin {
+  width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+.box-in-top-header-left {
+  height: 15px;
+  width: 104px;
+  margin: 0;
+}
+.box-in-top-header-right {
+  height: 15px;
+  width: 104px;
+  margin: 0;
+  text-align: center;
+}
+.heart {
+  height: 12px;
+  width: 12px;
+  padding-top: 2px;
+}
+
+/* ************************************************ */
+/* REUSABLE CLASS FOR FLEX justify content SPACE BETWEEN */
+/* ************************************************ */
+.flex-jc-sp-bw {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-total-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* *************** */
+ul {
+  list-style: none;
+}
+/* ***************** */
+/* star rating */
+
+.checked {
+  color: #f8cb48;
+}
+.unchecked {
+  color: #cccccc;
+}
+
+/* ******************* */
+/* plus minus button */
+
+.quantity {
+  position: relative;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 70px;
+  height: 32px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 18px;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  /* border-radius: 4px; */
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 32px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  width: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  font-family: "FontAwesome" !important;
+  line-height: 1.5;
+  padding: 0;
+  background: #fafafa;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button:active {
+  background: #eaeaea;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  /* height: 50%; */
+  top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: "FontAwesome";
+  /* border-radius: 0 4px 0 0; */
+  line-height: 1.6;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: 0;
+  /* height: 50%; */
+  font-family: "FontAwesome";
+  /* border-radius: 0 0 4px 0; */
+}
+.login:hover,
+.help:hover,
+.usd:hover,
+.wishlist:hover,
+.english:hover,
+.download:hover,
+.logo:hover,
+.all-cat:hover,
+.search-icon:hover,
+.call-us-number:hover,
+.departments:hover,
+.cart-box:hover,
+.fab:hover,
+.submit:hover {
+  cursor: pointer;
+}
+
+/* *************************** */
+/* select box rule */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  border-radius: 3px;
+  height: 50px;
+  color: #ffffff;
+  padding-right: 30px;
+  font-size: 14px;
+  border-color: none;
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  /* border: none; */
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='12' height='12' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='grey'/></g></svg>")
+    no-repeat;
+  background-position: right 5px top 50%;
+}
+
+/* ****************************** */
+/* label > input[type="radio"] {
+  display: none;
+} */
+input[type="radio"]:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid black;
+}
+
+input[type="radio"]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -1.5px;
+  left: -0px;
+  position: relative;
+  color: black;
+  background: radial-gradient(
+    black 0%,
+    black 40%,
+    transparent 50%,
+    transparent
+  );
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid black;
+}
+
+/* 
+
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+  border-color: teal;
+}
+label > input[type="radio"]:checked + * {
+  color: teal;
+} */
